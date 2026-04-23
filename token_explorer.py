@@ -3,7 +3,7 @@ import sys
 
 def explore(text):
     enc = tiktoken.get_encoding("cl100k_base")
-    tokens = enc.encode(text)
+    tokens = enc.encode(text) 
     print(f"\nText: {text}")
     print(f"Token IDs: {tokens}")
     print(f"Token count: {len(tokens)}")
